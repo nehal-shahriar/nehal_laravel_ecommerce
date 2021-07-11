@@ -247,8 +247,8 @@
                             @foreach($related_products as $related_product)
                             <div class="product product-style-2 equal-elem ">
                                 <div class="product-thumnail">
-                                    <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-                                        <figure><img src="{{asset('assets/images/products/digital_4.jpg') }}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                    <a href="{{route('product.details',['slug'=>$related_product->slug])}}" title="{{$related_product->name}}">
+                                        <figure><img src="{{asset('assets/images/products') }}/{{$related_product->image}}.jpg" width="214" height="214" alt="{{$related_product->name}}"></figure>
                                     </a>
                                     <div class="group-flash">
                                         <span class="flash-item new-label">new</span>
@@ -258,8 +258,8 @@
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-                                    <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                    <a href="{{route('product.details',['slug'=>$related_product->slug])}}" title="{{$related_product->name}}" class="product-name"><span>{{$related_product->name}}</span></a>
+                                    <div class="wrap-price"><span class="product-price">{{$related_product->regular_price}}</span></div>
                                 </div>
                             </div>
                             @endforeach
