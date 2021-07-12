@@ -39,7 +39,7 @@
 						<div class="topbar-menu left-menu">
 							<ul>
 								<li class="menu-item">
-									<a title="Hotline: (+123) 456 789" href="#"><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a>
+									<a title="Hotline: (+88) 015 214 36444" href="#"><span class="icon label-before fa fa-mobile"></span>Hotline: (+88) 015 214 36444</a>
 								</li>
 							</ul>
 						</div>
@@ -106,7 +106,7 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="{{ asset('assets/images/logo-top-1.png') }}" alt="mercado"></a>
+							<a href="/" class="link-to-home"><img src="{{ asset('assets/images/nehal_logo.png') }}" alt="mercado"></a>
 						</div>
 
 						@livewire('header-search-component')
