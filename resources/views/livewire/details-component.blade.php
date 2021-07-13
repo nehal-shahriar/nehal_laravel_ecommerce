@@ -16,8 +16,8 @@
                         <div class="product-gallery">
                             <ul class="slides">
 
-                                <li data-thumb="{{ asset('assets/images/products') }}/{{$product->image}}.jpg">
-                                    <img src="{{ asset('assets/images/products') }}/{{$product->image}}.jpg" alt="{{$product->name}}" />
+                                <li data-thumb="{{ asset('assets/images/products/'.$product->image) }}">
+                                    <img src="{{ asset('assets/images/products/'.$product->image) }}" alt="{{$product->name}}" />
                                 </li>
 
                             </ul>
@@ -222,7 +222,7 @@
                                 <div class="product product-widget-style">
                                     <div class="thumbnnail">
                                         <a href="{{route('product.details', ['slug'=>$popular_product->slug])}}" title="{{$popular_product->name}}">
-                                            <figure><img src="{{ asset('assets/images/products') }}/{{$popular_product->image}}.jpg" alt="{{$popular_product->name}}"></figure>
+                                            <figure><img src="{{ asset('assets/images/products/'.$popular_product->image) }}" alt="{{$popular_product->name}}"></figure>
                                         </a>
                                     </div>
                                     <div class="product-info">
@@ -248,7 +248,7 @@
                             <div class="product product-style-2 equal-elem ">
                                 <div class="product-thumnail">
                                     <a href="{{route('product.details', ['slug'=>$related_product->slug])}}" title="{{$related_product->name}}">
-                                        <figure><img src="{{ asset('assets/images/products') }}/{{$related_product->image}}.jpg" width="214" height="214" alt="{{$related_product->name}}"></figure>
+                                        <figure><img src="{{ asset('assets/images/products/'.$related_product->image) }}" width="214" height="214" alt="{{$related_product->name}}"></figure>
                                     </a>
                                     <div class="group-flash">
                                         <span class="flash-item new-label">new</span>

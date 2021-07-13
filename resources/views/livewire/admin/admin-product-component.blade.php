@@ -13,7 +13,14 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        All Products
+                    <div class="row">
+                            <div class="col-md-6">
+                                All Products
+                            </div>
+                            <div class="col-md-6">
+                                <a href="{{route('admin.addproducts')}}" class="btn btn-success">Add New Products</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="panel-body">
@@ -34,7 +41,7 @@
                             @foreach($products as $product)
                             <tr>
                                 <td>{{$product->id}}</td>
-                                <td><img src="{{asset('assets/images/products')}}/{{$product->image}}.jpg" width="60" /></td>
+                                <td><img src="{{asset('assets/images/products/'.$product->image)}}" width="60" /></td>
                                 <td>{{$product->name}}</td>
                                 <td>{{$product->stock_status}}</td>
                                 <td>{{$product->regular_price}}</td>
