@@ -1001,6 +1001,7 @@ li.menu-item .nav-label.sale-label::before{
 .wrap-main-slide .item-slide .img-slide,
 .wrap-main-slide .item-slide{
     min-height: 190px;
+    max-height: 450px;
 }
 .wrap-main-slide .slide-carousel .slide-info{
     position: absolute;
